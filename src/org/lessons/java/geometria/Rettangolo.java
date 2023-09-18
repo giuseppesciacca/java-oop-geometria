@@ -1,7 +1,5 @@
 package org.lessons.java.geometria;
 
-import java.util.Iterator;
-
 public class Rettangolo {
 	public int base;
 	public int altezza;
@@ -33,11 +31,14 @@ public class Rettangolo {
 		calcolaPerimetro();
 		calcolaArea();
 
-		String baseDrawed = " ";
-		String whiteSpaces = " ";
+		String baseDrawed = "";
+		String whiteSpaces = "";
 
 		for (int i = 0; i < this.base; i++) {
 			baseDrawed = baseDrawed + "o";
+		}
+
+		for (int i = 0; i < this.base - 2; i++) {
 			whiteSpaces = whiteSpaces + " ";
 		}
 
